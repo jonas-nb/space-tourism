@@ -5,10 +5,12 @@ import Destination_Route from "./routes/Destination_Route";
 import Crew_Route from "./routes/Crew_Route";
 import Technology_Route from "./routes/Technology_Route";
 import Erro404 from "./routes/Erro404";
+import Menu from "./components/Home/Menu";
 
 const App = () => {
   return (
     <div>
+      <Menu />
       <Routes>
         <Route path="/" element={<Home_Route />} />
         <Route path="*" element={<Erro404 />} />
