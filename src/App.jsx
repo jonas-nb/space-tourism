@@ -9,7 +9,7 @@ import Menu from "./components/Home/Menu";
 
 const App = () => {
   return (
-    <div>
+    <div className="">
       <Menu />
       <Routes>
         <Route path="/" element={<Home_Route />} />

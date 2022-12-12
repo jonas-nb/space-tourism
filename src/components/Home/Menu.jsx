@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import { Link } from "react-router-dom";
-const Menu_Container = styled.div`
-  width: 100vw;
-`;
+import { Home_Context } from "./HomeContext";
+const Menu_Container = styled.div``;
 const Menu_Animation = keyframes`
 0% {
     transform: scaleX(0);
@@ -18,29 +17,28 @@ const Menu_Animation = keyframes`
   }
 `;
 const Menu_Navbar = styled.div`
-  width: 60vw;
-  height: 100vh;
   position: absolute;
   right: 0;
   top: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(10deg, rgba(0, 0, 0, 0.7) 14%, #717171 100%);
+  background-color: #000000ea;
   animation: ${Menu_Animation} 0.2s linear;
 `;
 
 const Menu = () => {
-  const [menuState, setMenuState] = useState(false);
-  console.log(menuState);
+  let { setButtonState, buttonState } = useContext(Home_Context);
+
+  console.log(buttonState);
+  console.log(setButtonState);
   return (
-    <>
+    <div>
       <Menu_Container>
         <button
           className="pt-10 w-10 h-10 bg-transparent absolute top-0 right-0 z-50"
           onClick={() =>
-            menuState === false ? setMenuState(true) : setMenuState(false)
+            buttonState === false ? setButtonState(true) : setButtonState(false)
           }
         >
-          {menuState === false ? (
+          {buttonState === false ? (
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
               <g fill="#D0D6F9" fill-rule="evenodd">
                 <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
@@ -56,10 +54,10 @@ const Menu = () => {
           )}
         </button>
       </Menu_Container>
-      {menuState === false ? (
+      {buttonState === false ? (
         <></>
       ) : (
-        <Menu_Navbar className="">
+        <Menu_Navbar className="w-52 h-full">
           <div className="flex flex-col justify-around h-52 mt-28 pl-5 uppercase text-white">
             <Link className="text-white focus:text-emerald-700" to="/">
               <b>00</b> home
@@ -82,7 +80,7 @@ const Menu = () => {
           </div>
         </Menu_Navbar>
       )}
-    </>
+    </div>
   );
 };
 
