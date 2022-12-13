@@ -4,16 +4,18 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import ArticleHome from "./ArticleHome";
 import ButtonExplore from "./ButtonExplore";
-import { Home_Provider } from "./HomeContext";
+import bg from "./img/bg.jpg";
 
 const Menu_Bg = styled.div`
-  background-image: url("src/assets/imgs/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 `;
 const IndexHome = () => {
   return (
-    <Menu_Bg className="w-full h-screen">
+    <Menu_Bg
+      className="border border-blue-500 h-screen"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
       <Logo />
       <ArticleHome />
       <ButtonExplore />
