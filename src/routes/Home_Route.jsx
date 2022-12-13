@@ -1,7 +1,12 @@
 import React from "react";
+import IndexHome from "../components/Home/IndexHome";
 
 const Home_Route = () => {
-  return <div>Home_Route</div>;
+  return (
+    <div>
+      <IndexHome />
+    </div>
+  );
 };
 
 export default Home_Route;
