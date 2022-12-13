@@ -7,7 +7,7 @@ module.exports = {
       barlow: ["Barlow Condensed", "sans-serif"],
     },
     backgroundImage: {
-      "mobile-bg": "url('./img/bg.jpg')",
+      "mobile-bg": "url('../img/bg.jpg')",
       "footer-texture": "url('/img/footer-texture.png')",
     },
   },
