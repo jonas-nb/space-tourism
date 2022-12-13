@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import ArticleHome from "./ArticleHome";
 import ButtonExplore from "./ButtonExplore";
-import bg from "./img/bg.jpg";
 
 const Menu_Bg = styled.div`
   background-repeat: no-repeat;
@@ -13,8 +12,8 @@ const Menu_Bg = styled.div`
 const IndexHome = () => {
   return (
     <Menu_Bg
-      className="border border-blue-500 h-screen"
-      style={{ backgroundImage: `url(${bg})` }}
+      className={`border h-screen bg-home-mobile`}
+      // style={{ backgroundImage: `url(${bg})` }}
     >
       <Logo />
       <ArticleHome />
