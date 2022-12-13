@@ -6,6 +6,10 @@ module.exports = {
       bellefair: ["Bellefair", "serif"],
       barlow: ["Barlow Condensed", "sans-serif"],
     },
+    backgroundImage: {
+      "mobile-bg": "url('./img/bg.jpg')",
+      "footer-texture": "url('/img/footer-texture.png')",
+    },
   },
   plugins: [require("daisyui")],
 };
