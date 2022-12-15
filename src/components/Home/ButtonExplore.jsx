@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
 import styled from "styled-components";
-import { Home_Context } from "./HomeContext";
+import { useNavigate } from "react-router-dom";
 
 const Explore_button = styled.button`
   display: block;
@@ -8,23 +7,26 @@ const Explore_button = styled.button`
   margin-top: 3rem;
   width: 8rem;
   height: 8rem;
+  @media (min-width: 1280px) {
+    width: 15rem;
+    height: 15rem;
+  }
   border-radius: 100%;
   text-transform: uppercase;
 `;
 
 const ButtonExplore = () => {
-  let { setButtonState, buttonState } = useContext(Home_Context);
+  const navega = useNavigate();
 
-  console.log(buttonState);
   return (
-    <Explore_button
-      onClick={() =>
-        buttonState === false ? setButtonState(true) : setButtonState(false)
-      }
-      className="font-bellefair text-lg font-[900] transition-all duration-300 hover:outline hover:outline-[2rem] hover:outline-[#474c5e]"
-    >
-      explore
-    </Explore_button>
+    <div>
+      <Explore_button
+        onClick={() => navega("/Destination")}
+        className=" font-bellefair text-lg xl:text-3xl font-[900] transition-all duration-300 hover:outline hover:outline-[2rem] hover:outline-[#474c5e]"
+      >
+        explore
+      </Explore_button>
+    </div>
   );
 };
 
