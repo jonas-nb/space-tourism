@@ -13,7 +13,7 @@ const IndexHome = () => {
   return (
     <Menu_Bg className="min-h-screen bg-mobile-bg sm:bg-tablet-bg xl:bg-desktop-bg ">
       <Logo />
-      <div className="xl:flex xl:items-center xl:justify-around">
+      <div className="xl:flex xl:items-center xl:justify-around xl:mt-20">
         <ArticleHome />
         <ButtonExplore />
       </div>
