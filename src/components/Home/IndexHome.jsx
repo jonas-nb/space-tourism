@@ -11,10 +11,12 @@ const Menu_Bg = styled.div`
 `;
 const IndexHome = () => {
   return (
-    <Menu_Bg className="border border-blue-500 h-screen bg-mobile-bg">
+    <Menu_Bg className="min-h-screen bg-mobile-bg sm:bg-tablet-bg xl:bg-desktop-bg ">
       <Logo />
-      <ArticleHome />
-      <ButtonExplore />
+      <div className="xl:flex xl:items-center xl:justify-around">
+        <ArticleHome />
+        <ButtonExplore />
+      </div>
     </Menu_Bg>
   );
 };
