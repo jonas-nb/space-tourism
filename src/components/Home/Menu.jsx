@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import "./menu.css";
+
 const Menu_Container = styled.div``;
 const Menu_Animation = keyframes`
 0% {
