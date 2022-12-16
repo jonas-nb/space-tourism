@@ -100,25 +100,25 @@ const Menu = () => {
       ) : (
         <div className="w-[60%] h-32 xl:h-24 font-barlow absolute right-0 xl:top-10 flex items-center justify-around uppercase bg-[#151923] xl:bg-white/20 text-[1rem] tracking-[0.15rem] backdrop-blur-md">
           <Link
-            className="h-full flex items-center focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white"
+            className="h-full flex items-center hover:border-b-[4px] hover:border-gray-400 focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white "
             to="/"
           >
             <div className="pr-1 font-bold hidden xl:block">00</div>home
           </Link>
           <Link
-            className="h-full flex items-center focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white"
+            className="h-full flex items-center hover:border-b-[4px] hover:border-gray-400 focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white "
             to="/Destination"
           >
             <div className="pr-1 font-bold hidden xl:block">01</div>destination
           </Link>
           <Link
-            className="h-full flex items-center focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white"
+            className="h-full flex items-center hover:border-b-[4px] hover:border-gray-400 focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white "
             to="/Crew"
           >
             <div className="pr-1 font-bold hidden xl:block">02</div>crew
           </Link>
           <Link
-            className="h-full flex items-center focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white"
+            className="h-full flex items-center hover:border-b-[4px] hover:border-gray-400 focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white "
             to="/Technology"
           >
             <div className="pr-1 font-bold hidden xl:block">03</div>technology
