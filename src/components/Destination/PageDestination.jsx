@@ -4,7 +4,7 @@ import moon from '../Destination/assets/image-moon.png'
 import mars from '../Destination/assets/image-mars.png'
 import europa from '../Destination/assets/image-europa.png'
 import titan from '../Destination/assets/image-titan.png'
-
+import './style.css'
 const PageDestination = () => {
     const [selecionaID, setSelecionaID] = useState(0)
     const [image, setImage] = useState(moon)
@@ -32,37 +32,70 @@ const PageDestination = () => {
 
     console.log(callDestino)
     return (
-        <div className="w-full min-h-screen bg-destination-bg-mobile sm:bg-destination-bg-tablet xl:bg-destination-bg-desktop bg-no-repeat text-center pt-24 uppercase">
-            <h1 className="font-barlow text-white tracking-[0.2rem] font-[200]">
+        <div className="w-full min-h-screen bg-destination-bg-mobile sm:bg-destination-bg-tablet xl:bg-destination-bg-desktop bg-no-repeat bg-cover text-center pt-24 ">
+            <h1 className="uppercase font-barlow text-white tracking-[0.2rem] font-[200]">
                 <span className="font-[600] text-[#4c4f57]">01</span> pick your
                 destination
             </h1>
-            <div>
-                <img src={image} alt="" />
+            <div className="m-auto w-44 mt-10 drop-shadow-md">
+                <img src={image} alt="imagem do destino escolhido" />
             </div>
-            <nav>
-                <button onClick={handlerMoon}>moon</button>
-                <button onClick={handlerMars}>mars</button>
-                <button onClick={handlerEuropa}>europa</button>
-                <button onClick={handlerTitan}>titan</button>
-            </nav>
+            <div className="font-barlow flex items-center justify-around ">
+                <button
+                    className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
+                    onClick={handlerMoon}
+                >
+                    moon
+                </button>
+                <button
+                    className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
+                    onClick={handlerMars}
+                >
+                    mars
+                </button>
+                <button
+                    className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
+                    onClick={handlerEuropa}
+                >
+                    europa
+                </button>
+                <button
+                    className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
+                    onClick={handlerTitan}
+                >
+                    titan
+                </button>
+            </div>
             {/* recebe destino */}
             <div>
                 {callDestino.map(
                     ({ destination, text, distance, id, travel }) => (
-                        <div key={id}>
+                        <div className="pb-16" key={id}>
                             <div>
-                                <h1>{destination}</h1>
-                                <p>{text}</p>
+                                <h1 className="uppercase font-bellefair text-[3rem] mt-10 text-white font-thin">
+                                    {destination}
+                                </h1>
+                                <p className="text-slate-300 text-[0.75rem] leading-6 tracking-[0.010rem] p-9 font-barlow">
+                                    {text}
+                                </p>
                             </div>
-                            <div>
-                                <div>
-                                    <h3>avg. distance</h3>
-                                    <h2>{distance}</h2>
+                            <hr className="m-auto w-10/12" />
+                            <div className="uppercase">
+                                <div className="mt-7">
+                                    <h3 className="font-barlow font-medium tracking-wide text-slate-500">
+                                        avg. distance
+                                    </h3>
+                                    <h2 className="text-[1.7rem] font-semibold text-white mt-3 font-bellefair">
+                                        {distance}
+                                    </h2>
                                 </div>
-                                <div>
-                                    <h3>est. travel time</h3>
-                                    <h2>{travel}</h2>
+                                <div className="mt-7">
+                                    <h3 className="font-barlow font-medium tracking-wide text-slate-500">
+                                        est. travel time
+                                    </h3>
+                                    <h2 className="text-[1.7rem] font-semibold text-white mt-3 font-bellefair">
+                                        {travel}
+                                    </h2>
                                 </div>
                             </div>
                         </div>
