@@ -3,8 +3,8 @@ import LogoPage from '../../assets/icons/logo.svg'
 
 const Logo = () => {
     return (
-        <div className="w-10 sm:w-14 absolute top-7 sm:top-10 left-5 sm:left-10">
-            <img src={LogoPage} alt="" className="sm:w-14" />
+        <div className="absolute mt-8 sm:mt-10 xl:mt-16 ml-4 sm:ml-8 xl:ml-14 ">
+            <img src={LogoPage} alt="" className="w-11 sm:w-16 xl:w-14" />
         </div>
     )
 }
