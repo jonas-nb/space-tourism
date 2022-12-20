@@ -1,0 +1,7 @@
+.MyBtn {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 500;
+    color: rgb(186, 186, 186);
+}
