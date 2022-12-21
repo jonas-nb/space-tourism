@@ -50,16 +50,16 @@ const Menu = () => {
                             }
                         >
                             {buttonState === false ? (
-                                <img src={iconMenu} alt="" />
+                                <img src={iconMenu} alt="icone menu" />
                             ) : (
-                                <img src={iconClose} alt="" />
+                                <img src={iconClose} alt="icone fechar" />
                             )}
                         </button>
                     </Menu_Container>
                     {buttonState === false ? (
                         <></>
                     ) : (
-                        <Menu_Navbar className="w-52 h-full">
+                        <Menu_Navbar className="w-52 h-full z-40">
                             <div className="font-barlow text-lg flex flex-col justify-around h-52 mt-28 pl-5 uppercase text-white">
                                 <Link
                                     className="focus:underline-offset-8 focus:underline"
