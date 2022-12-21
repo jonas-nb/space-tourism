@@ -1,0 +1,10 @@
+.crewBtn {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    display: block;
+    background-color: #454850;
+}
+.crewBtn:focus {
+    background-color: #fff;
+}
