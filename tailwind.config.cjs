@@ -14,6 +14,9 @@ module.exports = {
       "destination-bg-desktop":
         "url(../img/background-destination-desktop.jpg)",
       "destination-bg-tablet": "url(../img/background-destination-tablet.jpg)",
+      "crew-bg-mobile": "url(../img/background-crew-mobile.jpg)",
+      "crew-bg-tablet": "url(../img/background-crew-tablet.jpg)",
+      "crew-bg-desktop": "url(../img/background-crew-desktop.jpg)",
     },
   },
   plugins: [require("daisyui")],

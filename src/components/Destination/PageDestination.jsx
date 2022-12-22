@@ -19,11 +19,11 @@ const PageDestination = () => {
     }
     const handlerMars = () => {
         setSelecionaID(1)
-        setImage(mars)
+        setImage(europa)
     }
     const handlerEuropa = () => {
         setSelecionaID(2)
-        setImage(europa)
+        setImage(mars)
     }
     const handlerTitan = () => {
         setSelecionaID(3)
@@ -54,13 +54,13 @@ const PageDestination = () => {
                             className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
                             onClick={handlerMars}
                         >
-                            mars
+                            europa
                         </button>
                         <button
                             className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
                             onClick={handlerEuropa}
                         >
-                            europa
+                            mars
                         </button>
                         <button
                             className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"

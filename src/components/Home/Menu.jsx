@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { Link } from 'react-router-dom'
-import iconMenu from './assets/menu.svg'
-import iconClose from './assets/close.svg'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 const Menu_Container = styled.div``
 const Menu_Animation = keyframes`
 0% {
@@ -50,16 +49,16 @@ const Menu = () => {
                             }
                         >
                             {buttonState === false ? (
-                                <img src={iconMenu} alt="" />
+                                <AiOutlineMenu className="text-white text-[2rem]" />
                             ) : (
-                                <img src={iconClose} alt="" />
+                                <AiOutlineClose className="text-white text-[2rem]" />
                             )}
                         </button>
                     </Menu_Container>
                     {buttonState === false ? (
                         <></>
                     ) : (
-                        <Menu_Navbar className="w-52 h-full">
+                        <Menu_Navbar className="w-52 h-full z-40">
                             <div className="font-barlow text-lg flex flex-col justify-around h-52 mt-28 pl-5 uppercase text-white">
                                 <Link
                                     className="focus:underline-offset-8 focus:underline"
