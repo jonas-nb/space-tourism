@@ -49,9 +49,9 @@ const Menu = () => {
                             }
                         >
                             {buttonState === false ? (
-                                <AiOutlineMenu className="text-white text-[2rem]" />
+                                <AiOutlineMenu className="text-white text-[2rem] z-50" />
                             ) : (
-                                <AiOutlineClose className="text-white text-[2rem]" />
+                                <AiOutlineClose className="text-white text-[2rem] z-50" />
                             )}
                         </button>
                     </Menu_Container>
