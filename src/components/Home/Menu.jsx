@@ -49,6 +49,7 @@ const Menu = () => {
                             }
                         >
                             {buttonState === false ? (
+                                // aplicando z-index
                                 <AiOutlineMenu className="text-white text-[2rem] z-50" />
                             ) : (
                                 <AiOutlineClose className="text-white text-[2rem] z-50" />
