@@ -8,3 +8,21 @@
 .crewBtn:focus {
     background-color: #fff;
 }
+@media (min-width: 768px) {
+    .crewBtn {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 100%;
+        display: block;
+        background-color: #454850;
+    }
+}
+@media (min-width: 1280px) {
+    .crewBtn {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 100%;
+        display: block;
+        background-color: #454850;
+    }
+}
