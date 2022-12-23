@@ -37,7 +37,10 @@ const CrewCarousel = () => {
                 />
             </div>
             <div className="m-auto mt-5 w-36 flex justify-around">
-                <button className="crewBtn" onClick={handlerZero}></button>
+                <button
+                    className={crewState === 0 ? 'crewBtn bg-white' : 'crewBtn'}
+                    onClick={handlerZero}
+                ></button>
                 <button className="crewBtn" onClick={handlerFirst}></button>
                 <button className="crewBtn" onClick={handlerSecond}></button>
                 <button className="crewBtn" onClick={handleThird}></button>
