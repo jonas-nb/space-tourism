@@ -1,10 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { MY_CONTEXT } from './CrewContext'
 import './buttons.css'
-import anousheh from './assets/image-anousheh-ansari.png'
-import victor from './assets/image-victor-glover.png'
-import mark from './assets/image-mark-shuttleworth.png'
-import douglas from './assets/image-douglas-hurley.png'
 
 const CrewCarousel = () => {
     let {
