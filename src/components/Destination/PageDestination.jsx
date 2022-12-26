@@ -45,7 +45,11 @@ const PageDestination = () => {
                     {/* menu */}
                     <div className="font-barlow flex items-center justify-around xl:justify-start sm:m-auto xl:m-0 sm:w-6/12 xl:w-full sm:mt-10">
                         <button
-                            className="MyBtn border-b-2 border-transparent hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
+                            className={
+                                selecionaID === 0
+                                    ? 'MyBtn border-b-2 border-slate-50'
+                                    : 'MyBtn border-b-2 border-transparent hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50'
+                            }
                             onClick={handlerMoon}
                         >
                             moon

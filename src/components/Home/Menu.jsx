@@ -26,6 +26,7 @@ const Menu_Navbar = styled.div`
 const Menu = () => {
     let [buttonState, setButtonState] = useState(false)
     let [tela, setTela] = useState(0)
+
     //função para definir o tamanho da tela e aplicar o tipo de menu
     function mostraTela() {
         setTela(window.screen.width)
@@ -49,9 +50,10 @@ const Menu = () => {
                             }
                         >
                             {buttonState === false ? (
-                                <AiOutlineMenu className="text-white text-[2rem]" />
+                                // aplicando z-index
+                                <AiOutlineMenu className="text-white text-[2rem] z-50" />
                             ) : (
-                                <AiOutlineClose className="text-white text-[2rem]" />
+                                <AiOutlineClose className="text-white text-[2rem] z-50" />
                             )}
                         </button>
                     </Menu_Container>
@@ -91,7 +93,8 @@ const Menu = () => {
             ) : (
                 <div className="w-[60%] h-32 xl:h-24 font-barlow absolute right-0 xl:top-10 flex items-center justify-around uppercase bg-[#151923] xl:bg-white/20 text-[1rem] tracking-[0.15rem] backdrop-blur-md">
                     <Link
-                        className="h-full flex items-center hover:border-b-[4px] hover:border-gray-400 focus:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white "
+                        tabIndex={0}
+                        className="h-full flex items-center hover:border-b-[4px] hover:border-gray-400 focus:border-b-[4px] visited:border-b-[4px] text-[#efefef] focus:text-[#efefef] font-light hover:text-white "
                         to="/"
                     >
                         <div className="pr-1 font-bold hidden xl:block">00</div>
