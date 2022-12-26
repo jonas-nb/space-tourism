@@ -7,14 +7,14 @@ const TecImage = () => {
         useContext(TEC_CONTEXT)
 
     return (
-        <div>
+        <div className="mt-5">
             <img
-                className="border border-red-600 w-full h-10 xl:hidden"
+                className="xl:hidden w-full h-full object-cover"
                 src={image_landscape}
                 alt="imagem das tecnologias de voo"
             />
             <img
-                className="border border-red-600 w-full h-10 hidden xl:block"
+                className="hidden xl:block w-full h-10"
                 src={image_portrait}
                 alt="imagem das tecnologias de voo"
             />
