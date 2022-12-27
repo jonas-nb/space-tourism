@@ -20,9 +20,13 @@
 <h2>instalação</h2>
 <h3>Com NPM</h3>
 <code> git clone https://github.com/jonas-nb/space-tourism </code>
+<br>
 <code> cd space-tourism</code>
+<br>
 <code> npm install</code>
+<br>
 <code> npm run dev</code>
+<br>
 <hr />
 
 <h2>Uso do Projeto</h2>
