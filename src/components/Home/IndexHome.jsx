@@ -11,7 +11,7 @@ const Menu_Bg = styled.div`
 `
 const IndexHome = () => {
     return (
-        <div className="xl:w-full xl:flex xl:flex-col xl:justify-around">
+        <div className="min-h-screen w-full xl:w-full xl:flex xl:flex-col xl:justify-around">
             <Menu_Bg className="min-h-screen bg-mobile-bg sm:bg-tablet-bg xl:bg-desktop-bg ">
                 <div className="xl:relative xl:top-[6rem] xl:flex xl:items-center xl:justify-around xl:mt-20 pt-20 xl:pt-0">
                     <ArticleHome />

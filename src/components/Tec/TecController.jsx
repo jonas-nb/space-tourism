@@ -6,7 +6,7 @@ const TecController = () => {
         useContext(TEC_CONTEXT)
 
     return (
-        <div className="w-5/12 m-auto mt-5 flex justify-around">
+        <div className="w-5/12 m-auto mt-5 flex justify-around xl:flex-col xl:items-center xl:w-20 xl:h-72 xl:mt-16">
             <button
                 className={
                     ctrl_state === 0
