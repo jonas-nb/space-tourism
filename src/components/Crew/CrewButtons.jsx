@@ -29,7 +29,7 @@ const CrewButtons = () => {
     }
 
     return (
-        <div className="hidden xl:flex xl:w-36 xl:h-11 xl:mt-5 justify-around">
+        <div className="hidden xl:flex xl:w-36 xl:h-10 xl:fixed xl:bottom-1 justify-around">
             <button
                 className={crewState === 0 ? 'crewBtn bg-white' : 'crewBtn'}
                 onClick={handlerZero}
