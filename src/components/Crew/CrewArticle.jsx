@@ -12,7 +12,7 @@ const CrewArticle = () => {
     return (
         <div className="xl:w-11/12  xl:ml-44 xl:h-96 xl:flex xl:flex-col">
             {information.map(({ name, bio, role }) => (
-                <div className="mb-10 md:mb-0 h-[25rem]">
+                <div className="mb-10 md:mb-0 h-[25rem] md:h-48">
                     <h2 className="mt-10 md:mt-14 xl:mt-10 uppercase text-center xl:text-left text-[#6d6f74] font-bellefair text-[1rem] md:text-[1.5rem] xl:text-[2rem]">
                         {role}
                     </h2>

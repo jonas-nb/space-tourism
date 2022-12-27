@@ -33,7 +33,7 @@ const PageDestination = () => {
     console.log(callDestino)
     return (
         <div className="w-full min-h-screen bg-destination-bg-mobile sm:bg-destination-bg-tablet xl:bg-destination-bg-desktop bg-no-repeat bg-cover text-center pt-24 ">
-            <h1 className="uppercase font-barlow text-white tracking-[0.2rem] font-[200] sm:text-left sm:mt-16 sm:ml-10 xl:ml-16 xl:text-[1.2rem]">
+            <h1 className="uppercase font-barlow text-white tracking-[0.2rem] font-[200] sm:text-left sm:mt-16 sm:ml-10 xl:ml-16 xl:text-[1.2rem] sm:text-[1.5rem]">
                 <span className="font-[600] text-[#4c4f57] ">01</span> pick your
                 destination
             </h1>
