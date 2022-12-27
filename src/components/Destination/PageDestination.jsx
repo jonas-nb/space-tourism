@@ -45,6 +45,7 @@ const PageDestination = () => {
                     {/* menu */}
                     <div className="font-barlow flex items-center justify-around xl:justify-start sm:m-auto xl:m-0 sm:w-6/12 xl:w-full sm:mt-10">
                         <button
+                            title="escolhe lua"
                             className={
                                 selecionaID === 0
                                     ? 'MyBtn border-b-2 border-slate-50'
@@ -55,18 +56,21 @@ const PageDestination = () => {
                             moon
                         </button>
                         <button
+                            title="escolhe europa"
                             className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
                             onClick={handlerMars}
                         >
                             europa
                         </button>
                         <button
+                            title="escolhe marte"
                             className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
                             onClick={handlerEuropa}
                         >
                             mars
                         </button>
                         <button
+                            title="escolhe titan"
                             className="MyBtn hover:border-b-2 focus:border-b-2 hover:border-slate-500 focus:border-slate-50"
                             onClick={handlerTitan}
                         >

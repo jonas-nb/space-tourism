@@ -8,6 +8,7 @@ const TecController = () => {
     return (
         <div className="w-5/12 m-auto mt-5 flex justify-around xl:flex-col xl:items-center xl:w-20 xl:h-72 xl:mt-16">
             <button
+                title="1"
                 className={
                     ctrl_state === 0
                         ? 'bg-white text-black tecButton font-bellefair'
@@ -18,12 +19,14 @@ const TecController = () => {
                 1
             </button>
             <button
+                title="2"
                 className="tecButton font-bellefair focus:bg-white focus:text-black"
                 onClick={handle_one}
             >
                 2
             </button>
             <button
+                title="3"
                 className="tecButton font-bellefair focus:bg-white focus:text-black"
                 onClick={handle_two}
             >

@@ -42,6 +42,7 @@ const Menu = () => {
                 <div>
                     <Menu_Container>
                         <button
+                            title="menu e close"
                             className="pt-10 w-10 h-10 bg-transparent absolute top-0 right-0 z-50"
                             onClick={() =>
                                 buttonState === false
