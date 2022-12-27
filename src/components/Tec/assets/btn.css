@@ -13,3 +13,9 @@
         height: 4rem;
     }
 }
+@media (min-width: 1280px) {
+    .tecButton {
+        width: 5rem;
+        height: 5rem;
+    }
+}

@@ -10,14 +10,14 @@ const TecIndex = () => {
         <div className="w-full min-h-screen bg-tec-bg-mobile sm:bg-tec-bg-tablet xl:bg-tec-bg-desktop bg-cover flex sm:block flex-col  items-center pt-28">
             <TEC_PROVIDER>
                 <TecTitle />
-                <div className="w-full border border-green-500 flex flex-col xl:flex-row">
-                    <div className="xl:order-3">
+                <div className="w-full flex flex-col xl:flex-row">
+                    <div className="xl:order-3 xl:pl-36">
                         <TecImage />
                     </div>
-                    <div className="xl:order-1">
+                    <div className="xl:order-1 xl:ml-52">
                         <TecController />
                     </div>
-                    <div className="xl:order-2">
+                    <div className="xl:order-2 xl:w-[30rem]">
                         <TecArticle />
                     </div>
                 </div>
